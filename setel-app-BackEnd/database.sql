@@ -62,3 +62,20 @@ VALUES
     ('Peminjaman', '', 'Jumlah Peminjaman Kendaraan', '', '', 'ride-dbp.png'),
     ('Kendaraan', '', 'Jumlah Kendaraan Tersedia', '', '', 'vehicle-dbp.png'),
     ('Maintenance', '', 'Jumlah Kendaraan Diperbaiki', '', '', 'maintenance-dbp.png');
+
+/* Table Shelter - Dashboard Page */
+CREATE TABLE IF NOT EXISTS Shelter (
+    idShelter INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    title2 VARCHAR(255) NOT NULL,
+    shelter VARCHAR(255) NOT NULL,
+    alt VARCHAR(255) NOT NULL,
+    unit VARCHAR(255) NOT NULL
+);
+
+INSERT INTO Shelter (title, title2, shelter, alt, unit)
+VALUES
+    ('Shelter TULT', 'Gedung Telkom University Landmark Tower', 'tult.jpg', 'shelter_1', ''),
+    ('Shelter GKU', 'Gedung Tokong Nanas', 'gku.jpg', 'shelter_2', ''),
+    ('Shelter Oplib', 'Gedung Open Library', 'oplib.jpg', 'shelter 3', ''),
+    ('Shelter MSU', 'Masjid Syamsul ''Ulum', 'msu.jpg', 'shelter_4', '');
