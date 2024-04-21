@@ -24,7 +24,7 @@
             <v-text-field v-model="password" :type="showPassword ? 'text' : 'password'"
               :append-inner-icon="showPassword ? 'mdi-eye-off' : 'mdi-eye'"
               @click:append-inner="showPassword = !showPassword" :readonly="loading" :rules="[required]" class="mb-8"
-              clearable label="Password" placeholder="Masukkan Password"></v-text-field>
+              clearable label="Password" placeholder="Masukkan Kata Sandi"></v-text-field>
             <v-alert v-if="loginError" type="error" dense>
               Username / Password yang dimasukkan salah
             </v-alert>
