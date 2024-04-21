@@ -45,3 +45,20 @@ INSERT INTO Kendaraan (nomorUnit, jenisKendaraan, shelter, status) VALUES ('A007
 INSERT INTO Kendaraan (nomorUnit, jenisKendaraan, shelter, status) VALUES ('B008', 'Skuter', 'MSU', 'Unavailable');
 INSERT INTO Kendaraan (nomorUnit, jenisKendaraan, shelter, status) VALUES ('A009', 'Sepeda', 'TULT', 'Available');
 INSERT INTO Kendaraan (nomorUnit, jenisKendaraan, shelter, status) VALUES ('B010', 'Skuter', 'GKU', 'Available');
+
+/* Table informasi - Dashboard Page */
+CREATE TABLE IF NOT EXISTS Informasi (
+    idInfomrasi SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    amount VARCHAR(50) NOT NULL,
+    titleDetails VARCHAR(255) NOT NULL,
+    unitSepeda VARCHAR(255) NOT NULL,
+    unitSkuter VARCHAR(255) NOT NULL,
+    imageSource VARCHAR(255) NOT NULL
+);
+
+INSERT INTO Informasi (title, amount, titleDetails, unitSepeda, unitSkuter, imageSource)
+VALUES
+    ('Peminjaman', '', 'Jumlah Peminjaman Kendaraan', '', '', 'ride-dbp.png'),
+    ('Kendaraan', '', 'Jumlah Kendaraan Tersedia', '', '', 'vehicle-dbp.png'),
+    ('Maintenance', '', 'Jumlah Kendaraan Diperbaiki', '', '', 'maintenance-dbp.png');
