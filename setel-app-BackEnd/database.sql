@@ -100,3 +100,24 @@ INSERT INTO Report (username, tgl_wkt, noUnit, jenisKendaraan, shelterAwal, shel
 INSERT INTO Report (username, tgl_wkt, noUnit, jenisKendaraan, shelterAwal, shelterAkhir) VALUES ('Rohmah','2023-10-15 07:32:44','A003','Sepeda', 'MSU', 'OPLIB');
 INSERT INTO Report (username, tgl_wkt, noUnit, jenisKendaraan, shelterAwal, shelterAkhir) VALUES ('Putri','2023-10-16 09:41:20','B002','Sekuter', 'GKU', 'MSU');
 INSERT INTO Report (username, tgl_wkt, noUnit, jenisKendaraan, shelterAwal, shelterAkhir) VALUES ('Himeko','2023-10-17 10:12:59','A006','Sepeda', 'MSU', 'TULT');
+
+/* Tabel Feedback - FeedbackPage*/
+CREATE TABLE IF NOT EXISTS Feedback (
+  idFeedback INT PRIMARY KEY,
+  nim VARCHAR(20),
+  username VARCHAR(50),
+  timestamp DATETIME,
+  text TEXT
+);
+
+INSERT INTO Feedback (idFeedback, nim, username, timestamp, text) VALUES
+(1, '1302210004', 'jeanrikha', '2023-11-28 11:01:03', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum.'),
+(2, '1302213030', 'novitasabila', '2023-11-25 07:11:02', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum. Proin mi quam, maximus vitae laoreet quis, aliquet eget ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'),
+(3, '1302213038', 'aishueo', '2023-11-19 05:09:11', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum. Proin mi quam, maximus vitae laoreet quis, aliquet eget ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum.'),
+(4, '1302213051', 'jannatinurrohmah', '2023-11-15 17:19:23', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum. Proin mi quam, maximus vitae laoreet quis, aliquet eget ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum. Proin mi quam, maximus vitae laoreet quis, aliquet eget ligula.'),
+(5, '1302213091', 'trianipmumpuni', '2023-11-10 20:02:49', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum. Proin mi quam, maximus vitae laoreet quis, aliquet eget ligula'),
+(6, '1302213007', 'aerichanie', '2023-10-31 15:03:19', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum. Proin mi quam, maximus vitae laoreet quis, aliquet eget ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'),
+(7, '1204190002', 'karinateryoo', '2023-10-29 14:00:00', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum. Proin mi quam, maximus vitae laoreet quis, aliquet eget ligula.'),
+(8, '1653173301', 'ningningguang', '2023-10-28 17:04:11', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum. Proin mi quam, maximus vitae laoreet quis, aliquet eget ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum. Proin mi quam, maximus vitae laoreet quis, aliquet eget ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum. Proin mi quam, maximus vitae laoreet quis, aliquet eget ligula.Lorem ipsum dolor sit amet, consectetur adipiscing elit.'),
+(9, '1282303218', 'huangren', '2023-10-27 12:57:34', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum.'),
+(10, '1281999216', 'marklee', '2023-10-25 10:00:00', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum. Proin mi quam, maximus vitae laoreet quis, aliquet eget ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis interdum elementum. Proin mi quam, maximus vitae laoreet quis, aliquet eget ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.');
