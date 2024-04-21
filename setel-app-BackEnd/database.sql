@@ -79,3 +79,24 @@ VALUES
     ('Shelter GKU', 'Gedung Tokong Nanas', 'gku.jpg', 'shelter_2', ''),
     ('Shelter Oplib', 'Gedung Open Library', 'oplib.jpg', 'shelter 3', ''),
     ('Shelter MSU', 'Masjid Syamsul ''Ulum', 'msu.jpg', 'shelter_4', '');
+
+/* Table Report-ReportPage*/
+CREATE TABLE IF NOT EXISTS Report (
+  idPeminjaman INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(10),
+  tgl_wkt DATETIME,
+  noUnit VARCHAR(10),
+  jenisKendaraan VARCHAR(10),
+  shelterAwal VARCHAR(15),
+  shelterAkhir VARCHAR(15)
+);
+
+INSERT INTO Report (username, tgl_wkt, noUnit, jenisKendaraan, shelterAwal, shelterAkhir) VALUES ('Jannah','2023-10-15 07:32:44','A003','Sepeda', 'GKU', 'OPLIB');
+INSERT INTO Report (username, tgl_wkt, noUnit, jenisKendaraan, shelterAwal, shelterAkhir) VALUES ('Aisha','2023-10-16 09:41:20','A004','Sepeda', 'MSU', 'OPLIB');
+INSERT INTO Report (username, tgl_wkt, noUnit, jenisKendaraan, shelterAwal, shelterAkhir) VALUES ('Novita','2023-10-17 10:12:59','A005','Sepeda', 'GKU', 'TULT');
+INSERT INTO Report (username, tgl_wkt, noUnit, jenisKendaraan, shelterAwal, shelterAkhir) VALUES ('Triep','2023-05-15 08:32:44','B001','Sekuter', 'OPLIB', 'MSU');
+INSERT INTO Report (username, tgl_wkt, noUnit, jenisKendaraan, shelterAwal, shelterAkhir) VALUES ('Jeanr','2023-10-16 09:41:20','A001','Sepeda', 'GKU', 'TULT');
+INSERT INTO Report (username, tgl_wkt, noUnit, jenisKendaraan, shelterAwal, shelterAkhir) VALUES ('Novis','2023-10-17 10:12:59','B003','Sekuter', 'GKU', 'OPLIB');
+INSERT INTO Report (username, tgl_wkt, noUnit, jenisKendaraan, shelterAwal, shelterAkhir) VALUES ('Rohmah','2023-10-15 07:32:44','A003','Sepeda', 'MSU', 'OPLIB');
+INSERT INTO Report (username, tgl_wkt, noUnit, jenisKendaraan, shelterAwal, shelterAkhir) VALUES ('Putri','2023-10-16 09:41:20','B002','Sekuter', 'GKU', 'MSU');
+INSERT INTO Report (username, tgl_wkt, noUnit, jenisKendaraan, shelterAwal, shelterAkhir) VALUES ('Himeko','2023-10-17 10:12:59','A006','Sepeda', 'MSU', 'TULT');
